@@ -19,9 +19,8 @@ const UsersImgArray = [Users1, Users2, Users3, Users4, Users5, Users6];
 const CardImgArray = [HandImg, CoupleImg, TriangleImg, EyeImg, EmojiImg, LipsImg];
 const CardsWithImages = (props) => {
   const { data } = props;
-  console.log(data);
   return (
-    <div className="bg-gray-150 w-86 my-3 px-2 py-4 rounded-xl">
+    <div className="bg-gray-150  min-w-72 max-w-86 my-3 px-2 py-4 rounded-xl">
       <img
         className="w-96 h-42 px-2 mt-1"
         src={CardImgArray[data.cardImg]}
@@ -29,23 +28,23 @@ const CardsWithImages = (props) => {
       ></img>
       <div className="flex">
       {data.color.map((color, i) => (
-        <div key={i} className={`${color} w-15 h-2 mt-3 rounded ml-2`}>
+        <div key={i} className={`${color} w-10 md:w-15 h-1.5 md:h-2 mt-3 rounded ml-2`}>
           {" "}
         </div>
       ))}
       </div>
-      <h2 className="text-base w-76 px-2 pt-2 pb-2">{data.heading}</h2>
+      <h2 className="text-sm md:text-base w-76 px-2 pt-2 pb-2">{data.heading}</h2>
       {data?.subheading && (
-        <p className="px-2 w-72 text-gray-250 text-sm pb-2">
+        <p className="px-2 w-72 text-gray-250 text-xs md:text-sm pb-2">
           {data.subheading}
         </p>
       )}
 
       <div className="flex justify-between px-2 mt-4">
-        <img className="w-auto h-7" src={[UsersImgArray[data.img]]}></img>
+        <img className="w-auto h-6 md:h-7" src={[UsersImgArray[data.img]]}></img>
         <div className="flex">
           <div className="flex items-center pr-4">
-            <span className="text-gray-250">{data.comments}</span>
+            <span className="text-gray-250 text-xs md:text-sm">{data.comments}</span>
             <img
               className="h-4 w-4 ml-1"
               src={CommentIcon}
@@ -53,12 +52,12 @@ const CardsWithImages = (props) => {
             ></img>
           </div>
           <div className="flex items-center pr-4">
-            <span className="text-gray-250">{data.like}</span>
+            <span className="text-gray-250 text-xs md:text-sm">{data.like}</span>
             <img className="h-4 w-4 ml-1" src={LikeIcon} alt="like"></img>
           </div>
 
           <div className="flex items-center">
-            <span className="text-gray-250">{data.shares}</span>
+            <span className="text-gray-250 text-xs md:text-sm">{data.shares}</span>
             <img className="h-4 w-4 ml-1" src={ShareIcon} alt="share"></img>
           </div>
         </div>
