@@ -9,7 +9,7 @@ const CardsWithHeading = (props) => {
   const { data } = props;
   console.log(data);
   return (
-    <div className="bg-gray-150 w-86 my-2 px-2 py-4 rounded-xl">
+    <div className="bg-gray-150 w-86 my-3 px-2 py-4 rounded-xl">
       {data.color.map((color, i) => (
         <div key={i} className={`${color} w-15 h-2 rounded ml-2`}>
           {" "}

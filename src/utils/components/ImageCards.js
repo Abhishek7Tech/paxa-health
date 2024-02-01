@@ -21,7 +21,7 @@ const CardsWithImages = (props) => {
   const { data } = props;
   console.log(data);
   return (
-    <div className="bg-gray-150 w-86 my-2 px-2 py-4 rounded-xl">
+    <div className="bg-gray-150 w-86 my-3 px-2 py-4 rounded-xl">
       <img
         className="w-96 h-42 px-2 mt-1"
         src={CardImgArray[data.cardImg]}

@@ -11,7 +11,7 @@ import TestCardData from "../../utils/carddata/TestCardData";
 import FinalCardData from "../../utils/carddata/FinalCardData";
 const Card = () => {
   return (
-    <main>
+    <main className="flex px-8 justify-between overflow-x-auto mt-2">
       <div>
         <CardHead name={"Design"} />
         {DesignCardData.map((card, i) => {
@@ -26,7 +26,7 @@ const Card = () => {
         })}
       </div>
 
-      <div>
+      <div className="pl-6">
         <CardHead name={"Prototip"} />
         {PrototipCardData.map((card, i) => {
           return (
@@ -40,7 +40,7 @@ const Card = () => {
         })}
       </div>
 
-      <div>
+      <div className="pl-6">
         <CardHead name={"Trello"} />
         {TrelloCardData.map((card, i) => {
           return (
@@ -54,7 +54,7 @@ const Card = () => {
         })}
       </div>
 
-      <div>
+      <div className="pl-6">
         <CardHead name={"Test"} />
         {TestCardData.map((card, i) => {
           return (
@@ -68,7 +68,7 @@ const Card = () => {
         })}
       </div>
 
-      <div>
+      <div className="pl-6">
         <CardHead name={"Final"} />
         {FinalCardData.map((card, i) => {
           return (
