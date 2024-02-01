@@ -1,5 +1,5 @@
 import CardHead from "../../utils/components/CardHead";
-import CardsWithHeading from "./HeadingCards";
+import CardsWithHeading from "../../utils/components/HeadingCards";
 import DesignCardData from "../../utils/carddata/DesignCardData";
 const Card = () => {
   return (
