@@ -1,9 +1,10 @@
 import Users1 from "../../assets/card-logos-imgs/user-img-2.png";
+import Users2 from "../../assets/card-logos-imgs/user-img-4.png";
 import CommentIcon from "../../assets/card-logos-imgs/comments.svg";
 import LikeIcon from "../../assets/card-logos-imgs/heart.svg";
 import ShareIcon from "../../assets/card-logos-imgs/link.svg";
 
-const UsersImgArray = [Users1];
+const UsersImgArray = [Users1, Users2];
 
 
 const CardsWithSubheading = (props) => {

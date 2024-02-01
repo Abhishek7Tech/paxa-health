@@ -1,18 +1,40 @@
 import CardHead from "../../utils/components/CardHead";
 import CardsWithHeading from "../../utils/components/HeadingCards";
-import DesignCardData from "../../utils/carddata/DesignCardData";
 import CardsWithSubheading from "../../utils/components/SubHeadingCards";
 import CardsWithImages from "../../utils/components/ImageCards";
 import NewCard from "../../utils/components/NewCard";
+
+import DesignCardData from "../../utils/carddata/DesignCardData";
+import PrototipCardData from "../../utils/carddata/PrototipCardData";
 const Card = () => {
   return (
     <main>
       <div>
-        <CardHead />
-        <CardsWithHeading data={DesignCardData[0]} />
-        <CardsWithSubheading data={DesignCardData[1]} />
-        <CardsWithImages data={DesignCardData[2]} />
-        <NewCard data={DesignCardData[3]}/>
+        <CardHead name={"Design"} />
+        {DesignCardData.map((card, i) => {
+          return (
+            <div key={i}>
+             {card.type === "heading-card" && <CardsWithHeading data={card} /> }
+              {card.type === "card-with-subheading" && <CardsWithSubheading data={card} />}
+              {card.type === "card-with-img" && <CardsWithImages data={card} />}
+              {card.type === "card-with-addnew" && <NewCard data={DesignCardData[3]} />}
+            </div>
+          );
+        })}
+      </div>
+
+      <div>
+        <CardHead name={"Prototip"} />
+        {PrototipCardData.map((card, i) => {
+          return (
+            <div key={i}>
+             {card.type === "heading-card" && <CardsWithHeading data={card} /> }
+              {card.type === "card-with-subheading" && <CardsWithSubheading data={card} />}
+              {card.type === "card-with-img" && <CardsWithImages data={card} />}
+              {card.type === "card-with-addnew" && <NewCard data={DesignCardData[3]} />}
+            </div>
+          );
+        })}
       </div>
     </main>
   );
