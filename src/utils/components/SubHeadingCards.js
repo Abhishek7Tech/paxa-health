@@ -4,12 +4,12 @@ import Users3 from "../../assets/card-logos-imgs/user-img-8.png";
 import Users4 from "../../assets/card-logos-imgs/user-img-9.png";
 import Users5 from "../../assets/card-logos-imgs/user-img-11.png";
 import Users6 from "../../assets/card-logos-imgs/user-img-12.png";
-
+import Users7 from "../../assets/card-logos-imgs/user-img-13.png";
 import CommentIcon from "../../assets/card-logos-imgs/comments.svg";
 import LikeIcon from "../../assets/card-logos-imgs/heart.svg";
 import ShareIcon from "../../assets/card-logos-imgs/link.svg";
 
-const UsersImgArray = [Users1, Users2, Users3, Users4, Users5, Users6];
+const UsersImgArray = [Users1, Users2, Users3, Users4, Users5, Users6, Users7];
 
 
 const CardsWithSubheading = (props) => {

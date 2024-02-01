@@ -8,6 +8,7 @@ import DesignCardData from "../../utils/carddata/DesignCardData";
 import PrototipCardData from "../../utils/carddata/PrototipCardData";
 import TrelloCardData from "../../utils/carddata/TrelloCardData";
 import TestCardData from "../../utils/carddata/TestCardData";
+import FinalCardData from "../../utils/carddata/FinalCardData";
 const Card = () => {
   return (
     <main>
@@ -56,6 +57,20 @@ const Card = () => {
       <div>
         <CardHead name={"Test"} />
         {TestCardData.map((card, i) => {
+          return (
+            <div key={i}>
+             {card.type === "heading-card" && <CardsWithHeading data={card} /> }
+              {card.type === "card-with-subheading" && <CardsWithSubheading data={card} />}
+              {card.type === "card-with-img" && <CardsWithImages data={card} />}
+              {card.type === "card-with-addnew" && <NewCard data={DesignCardData[3]} />}
+            </div>
+          );
+        })}
+      </div>
+
+      <div>
+        <CardHead name={"Final"} />
+        {FinalCardData.map((card, i) => {
           return (
             <div key={i}>
              {card.type === "heading-card" && <CardsWithHeading data={card} /> }
