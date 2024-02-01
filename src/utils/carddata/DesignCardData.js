@@ -14,7 +14,7 @@ const DesignCardData = [
   {
     id: 2,
     type: "card-with-subheading",
-    img: 1,
+    img: 0,
     heading: "Home business advertising ideas",
     subheading:
       "Successful businesses know the importance of building and maintaining good working.",
@@ -27,7 +27,7 @@ const DesignCardData = [
   {
     id: 3,
     type: "card-with-img",
-    img: 2,
+    img: 0,
     heading: "Cosmetic surgery abroad making the right choice",
     color: ["bg-sky-350"],
     comments: 54,
