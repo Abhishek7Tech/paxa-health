@@ -33,8 +33,12 @@ const DesignCardData = [
     comments: 54,
     like: 16,
     shares: 33,
-    cardImg:1
+    cardImg:0
   },
+  {
+    id: 4,
+    type: "card-with-addnew"
+  }
 ];
 
 export default DesignCardData;
