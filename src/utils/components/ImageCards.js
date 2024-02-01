@@ -1,6 +1,7 @@
 import Users1 from "../../assets/card-logos-imgs/user-img-3.png";
 import Users2 from "../../assets/card-logos-imgs/user-img-5.png";
 import Users3 from "../../assets/card-logos-imgs/user-img-6.png";
+import Users4 from "../../assets/card-logos-imgs/user-img-7.png";
 
 import CommentIcon from "../../assets/card-logos-imgs/comments.svg";
 import LikeIcon from "../../assets/card-logos-imgs/heart.svg";
@@ -8,8 +9,10 @@ import ShareIcon from "../../assets/card-logos-imgs/link.svg";
 import HandImg from "../../assets/card-logos-imgs/hand.png";
 import CoupleImg from "../../assets/card-logos-imgs/couple.png";
 import TriangleImg from "../../assets/card-logos-imgs/triangle.png";
-const UsersImgArray = [Users1, Users2, Users3];
-const CardImgArray = [HandImg, CoupleImg, TriangleImg];
+import EyeImg from "../../assets/card-logos-imgs/eye.png";
+
+const UsersImgArray = [Users1, Users2, Users3, Users4];
+const CardImgArray = [HandImg, CoupleImg, TriangleImg, EyeImg];
 const CardsWithImages = (props) => {
   const { data } = props;
   console.log(data);
@@ -26,8 +29,12 @@ const CardsWithImages = (props) => {
         </div>
       ))}
       <h2 className="text-base w-76 px-2 pt-2 pb-2">{data.heading}</h2>
-     {data?.subheading && <p className="px-2 w-72 text-gray-250 text-sm pb-2">{data.subheading}</p>}
-     
+      {data?.subheading && (
+        <p className="px-2 w-72 text-gray-250 text-sm pb-2">
+          {data.subheading}
+        </p>
+      )}
+
       <div className="flex justify-between px-2 mt-4">
         <img className="w-auto h-7" src={[UsersImgArray[data.img]]}></img>
         <div className="flex">
