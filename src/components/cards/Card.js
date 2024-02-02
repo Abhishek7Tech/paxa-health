@@ -11,7 +11,7 @@ import TestCardData from "../../utils/carddata/TestCardData";
 import FinalCardData from "../../utils/carddata/FinalCardData";
 const Card = () => {
   return (
-    <main className="flex px-8 justify-between overflow-x-auto mt-2">
+    <main className="flex px-4 md:px-8 justify-between overflow-x-auto mt-2">
       <div>
         <CardHead name={"Design"} />
         {DesignCardData.map((card, i) => {

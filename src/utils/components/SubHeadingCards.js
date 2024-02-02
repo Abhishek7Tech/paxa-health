@@ -15,7 +15,7 @@ const UsersImgArray = [Users1, Users2, Users3, Users4, Users5, Users6, Users7];
 const CardsWithSubheading = (props) => {
     const { data } = props;
     return (
-      <div className="bg-gray-150  min-w-72 max-w-86 my-3 px-2 py-4 rounded-xl">
+      <div className="bg-gray-150 w-72 md:w-86 my-3 px-2 py-4 rounded-xl">
         <div className="flex">
         {data.color.map((color, i) => (
           <div key={i} className={`${color} w-10 md:w-15 h-1.5 md:h-2 rounded ml-2`}>

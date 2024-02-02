@@ -23,7 +23,7 @@ const NavBar = () => {
           width={75}
           height={30}
         ></img>
-        <div className="flex items-center px-4">
+        <div className="flex items-center px-2 md:px-4">
           {width > 768 && <VerticalBars />}
           <img
             src={TrelloBoardsIcon}
@@ -39,7 +39,7 @@ const NavBar = () => {
             <>
               {" "}
               <input
-                className="md:w-128 h-8 rounded-xl bg-gray-150 hidden md:block"
+                className="lg:w-128 md:w-64 h-8 rounded-xl bg-gray-150 hidden md:block"
                 type="text"
               ></input>
               <img

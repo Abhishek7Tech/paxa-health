@@ -20,7 +20,7 @@ const CardImgArray = [HandImg, CoupleImg, TriangleImg, EyeImg, EmojiImg, LipsImg
 const CardsWithImages = (props) => {
   const { data } = props;
   return (
-    <div className="bg-gray-150  min-w-72 max-w-86 my-3 px-2 py-4 rounded-xl">
+    <div className="bg-gray-150  w-72 md:w-86 my-3 px-2 py-4 rounded-xl">
       <img
         className="w-96 h-42 px-2 mt-1"
         src={CardImgArray[data.cardImg]}
