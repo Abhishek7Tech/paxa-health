@@ -23,7 +23,7 @@ const NavBar = () => {
           width={75}
           height={30}
         ></img>
-        <div className="flex items-center px-2 md:px-4">
+        <div className="flex items-center px-2 md:px-4 cursor-pointer">
           {width > 768 && <VerticalBars />}
           <img
             src={TrelloBoardsIcon}
@@ -61,10 +61,10 @@ const NavBar = () => {
       </div>
 
       <div className="flex items-center">
-        <img className="h-5 w-5 mx-2 md:mx-4" src={AddIcon} alt="add"></img>
-        <img className="h-5 w-5 mx-2 md:mx-4" src={AlertCircleIcon} alt="alert"></img>
-        <img className="h-5 w-5 mx-2 md:mx-4" src={BellIcon} alt="bell"></img>
-        <img className="h-7.5 md:h-10 w-7.5 md:w-10" src={UserIcon} alt="user"></img>
+        <img className="h-5 w-5 mx-2 md:mx-4 cursor-pointer" src={AddIcon} alt="add"></img>
+        <img className="h-5 w-5 mx-2 md:mx-4 cursor-pointer " src={AlertCircleIcon} alt="alert"></img>
+        <img className="h-5 w-5 mx-2 md:mx-4 cursor-pointer" src={BellIcon} alt="bell"></img>
+        <img className="h-7.5 md:h-10 w-7.5 md:w-10 cursor-pointer" src={UserIcon} alt="user"></img>
       </div>
     </nav>
   );
