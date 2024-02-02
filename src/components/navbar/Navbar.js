@@ -14,7 +14,7 @@ const NavBar = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <nav className="flex py-2 md:py-4 border-b-2 border-gray-150 items-center justify-between md:px-8 px-1">
+    <nav className="flex py-2 md:py-4 border-b-2 border-gray-150 items-center justify-between md:px-8 px-2">
       <div className="flex items-center  md:items-baseline">
         <img
           className="hidden md:inline"
