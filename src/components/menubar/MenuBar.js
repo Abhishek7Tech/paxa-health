@@ -19,7 +19,7 @@ const MenuBar = () => {
             </div>
 
                 <div className="flex items-center ml-2">
-                    <img className="md:mr-24 mr-8 h-10 w-auto" src={UserIcons} alt="users"></img>
+                    <img className="md:mr-24 mr-8 h-7.5 md:h-10 w-auto" src={UserIcons} alt="users"></img>
                     <h2 className="font-medium md:text-xl text-base">Menu</h2>
                 </div>
         </nav>
