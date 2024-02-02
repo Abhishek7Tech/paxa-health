@@ -24,6 +24,7 @@ const CardsWithHeading = (props) => {
         <img
           className="w-auto h-6 md:h-7"
           src={[UsersImgArray[data.img]]}
+          alt="users"
         ></img>
         <div className="flex">
           <div className="flex items-center pr-4">

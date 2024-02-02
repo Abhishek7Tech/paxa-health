@@ -35,13 +35,13 @@ const CardsWithImages = (props) => {
       </div>
       <h2 className="text-sm md:text-base w-76 px-2 pt-2 pb-2">{data.heading}</h2>
       {data?.subheading && (
-        <p className="px-2 w-72 text-gray-450 text-xs md:text-sm pb-2">
+        <p className="px-2  text-gray-450 text-xs md:text-sm pb-2">
           {data.subheading}
         </p>
       )}
 
       <div className="flex justify-between px-2 mt-4">
-        <img className="w-auto h-6 md:h-7" src={[UsersImgArray[data.img]]}></img>
+        <img className="w-auto h-6 md:h-7" src={[UsersImgArray[data.img]]} alt="users"></img>
         <div className="flex">
           <div className="flex items-center pr-4">
             <span className="text-gray-250 text-xs md:text-sm">{data.comments}</span>

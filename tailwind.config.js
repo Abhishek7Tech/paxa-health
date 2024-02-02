@@ -13,6 +13,7 @@ module.exports = {
         "81": "322px"
       },
       maxWidth: {
+        "82": "340px",
         "86": "362px",
         "128": "512px",
       },
@@ -27,7 +28,7 @@ module.exports = {
       colors: {
         "gray-150": "#F4F4F4",
         "gray-250": "#CDCCCA",
-        "gray-450": "#6b7280",
+        "gray-450": "#94a3b8",
         "yellow-350": "#F8BD1C",
         "blue-350": "#4339F2",
         "red-350": "#FF3838",
