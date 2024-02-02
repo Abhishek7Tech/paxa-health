@@ -24,7 +24,7 @@ const CardsWithSubheading = (props) => {
         ))}
         </div>
         <h2 className="text-sm md:text-base w-76 px-2 pt-2 pb-1">{data.heading}</h2>
-        <p className="px-2 w-72 text-gray-250 text-xs md:text-sm pb-2">{data.subheading}</p>
+        <p className="px-2 w-72 text-gray-450 text-xs md:text-sm pb-2">{data.subheading}</p>
         <div className="flex justify-between px-2 mt-4">
           <img className="w-auto h-6 md:h-7" src={[UsersImgArray[data.img]]}></img>
           <div className="flex">
